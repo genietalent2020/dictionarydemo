@@ -83,7 +83,7 @@ export default class CreateExercise extends Component {
   render() {
     return (
     <div>
-      <h3>Create New Word Definition</h3>
+      <h3>Add New Word Definition</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Username: </label>
