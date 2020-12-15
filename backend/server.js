@@ -25,8 +25,6 @@ const usersRouter = require('./routes/users');
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
 
-app.get('/', (req, res) => { res.send('Hello from Express!')
-
-app.listen((process.env.PORT || 5000), () => {
+app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
