@@ -10,7 +10,8 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-var uri = process.env.MONGODB_URI;
+//var uri = process.env.MONGODB_URI;
+var uri = "mongodb+srv://admin:geniebottle@cluster0.qqjln.mongodb.net/dictionarydemo?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
 );
 
