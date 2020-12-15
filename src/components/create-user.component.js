@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+
 export default class CreateUser extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +32,7 @@ export default class CreateUser extends Component {
 
     axios.post('/users/add', user)
       .then(res => console.log(res.data));
-      alert("User Added")
+    
 
     this.setState({
       username: ''
